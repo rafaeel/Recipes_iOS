@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5317A52417258168002C6603 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5317A51217258168002C6603 /* AFHTTPClient.m */; };
+		5317A52517258168002C6603 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5317A51417258168002C6603 /* AFHTTPRequestOperation.m */; };
+		5317A52617258168002C6603 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5317A51617258168002C6603 /* AFImageRequestOperation.m */; };
+		5317A52717258168002C6603 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5317A51817258168002C6603 /* AFJSONRequestOperation.m */; };
+		5317A52817258168002C6603 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5317A51A17258168002C6603 /* AFNetworkActivityIndicatorManager.m */; };
+		5317A52917258168002C6603 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5317A51D17258168002C6603 /* AFPropertyListRequestOperation.m */; };
+		5317A52A17258168002C6603 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5317A51F17258168002C6603 /* AFURLConnectionOperation.m */; };
+		5317A52B17258168002C6603 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5317A52117258168002C6603 /* AFXMLRequestOperation.m */; };
+		5317A52C17258168002C6603 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5317A52317258168002C6603 /* UIImageView+AFNetworking.m */; };
 		535A295717217F7400E45558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535A295617217F7400E45558 /* UIKit.framework */; };
 		535A295917217F7400E45558 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535A295817217F7400E45558 /* Foundation.framework */; };
 		535A295B17217F7400E45558 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535A295A17217F7400E45558 /* CoreGraphics.framework */; };
@@ -16,7 +25,6 @@
 		535A296917217F7400E45558 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 535A296817217F7400E45558 /* Default.png */; };
 		535A296B17217F7400E45558 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 535A296A17217F7400E45558 /* Default@2x.png */; };
 		535A296D17217F7400E45558 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 535A296C17217F7400E45558 /* Default-568h@2x.png */; };
-		535A297017217F7400E45558 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535A296E17217F7400E45558 /* MainStoryboard_iPhone.storyboard */; };
 		535A297317217F7400E45558 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535A297117217F7400E45558 /* MainStoryboard_iPad.storyboard */; };
 		535A297617217F7400E45558 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A297517217F7400E45558 /* ViewController.m */; };
 		535A297E17217F7400E45558 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535A297D17217F7400E45558 /* SenTestingKit.framework */; };
@@ -24,6 +32,9 @@
 		535A298017217F7400E45558 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535A295817217F7400E45558 /* Foundation.framework */; };
 		535A298817217F7400E45558 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 535A298617217F7400E45558 /* InfoPlist.strings */; };
 		535A298B17217F7400E45558 /* Recipe_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A298A17217F7400E45558 /* Recipe_iOSTests.m */; };
+		535A29961721815300E45558 /* AddRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A29951721815300E45558 /* AddRecipeViewController.m */; };
+		535A29991721839500E45558 /* ShowRecipesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A29981721839500E45558 /* ShowRecipesViewController.m */; };
+		53A54C871721F0D700BEC99A /* ShowRecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A54C861721F0D700BEC99A /* ShowRecipeDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +48,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5317A51117258168002C6603 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		5317A51217258168002C6603 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		5317A51317258168002C6603 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		5317A51417258168002C6603 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		5317A51517258168002C6603 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		5317A51617258168002C6603 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		5317A51717258168002C6603 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		5317A51817258168002C6603 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		5317A51917258168002C6603 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		5317A51A17258168002C6603 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		5317A51B17258168002C6603 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		5317A51C17258168002C6603 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		5317A51D17258168002C6603 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		5317A51E17258168002C6603 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		5317A51F17258168002C6603 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		5317A52017258168002C6603 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		5317A52117258168002C6603 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		5317A52217258168002C6603 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		5317A52317258168002C6603 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		535A295317217F7400E45558 /* Recipe_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		535A295617217F7400E45558 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		535A295817217F7400E45558 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,7 +80,6 @@
 		535A296817217F7400E45558 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		535A296A17217F7400E45558 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		535A296C17217F7400E45558 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		535A296F17217F7400E45558 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		535A297217217F7400E45558 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		535A297417217F7400E45558 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		535A297517217F7400E45558 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -60,6 +89,12 @@
 		535A298717217F7400E45558 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		535A298917217F7400E45558 /* Recipe_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Recipe_iOSTests.h; sourceTree = "<group>"; };
 		535A298A17217F7400E45558 /* Recipe_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Recipe_iOSTests.m; sourceTree = "<group>"; };
+		535A29941721815300E45558 /* AddRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRecipeViewController.h; sourceTree = "<group>"; };
+		535A29951721815300E45558 /* AddRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRecipeViewController.m; sourceTree = "<group>"; };
+		535A29971721839500E45558 /* ShowRecipesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowRecipesViewController.h; sourceTree = "<group>"; };
+		535A29981721839500E45558 /* ShowRecipesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowRecipesViewController.m; sourceTree = "<group>"; };
+		53A54C851721F0D700BEC99A /* ShowRecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowRecipeDetailViewController.h; sourceTree = "<group>"; };
+		53A54C861721F0D700BEC99A /* ShowRecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowRecipeDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +121,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5317A51017258168002C6603 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				5317A51117258168002C6603 /* AFHTTPClient.h */,
+				5317A51217258168002C6603 /* AFHTTPClient.m */,
+				5317A51317258168002C6603 /* AFHTTPRequestOperation.h */,
+				5317A51417258168002C6603 /* AFHTTPRequestOperation.m */,
+				5317A51517258168002C6603 /* AFImageRequestOperation.h */,
+				5317A51617258168002C6603 /* AFImageRequestOperation.m */,
+				5317A51717258168002C6603 /* AFJSONRequestOperation.h */,
+				5317A51817258168002C6603 /* AFJSONRequestOperation.m */,
+				5317A51917258168002C6603 /* AFNetworkActivityIndicatorManager.h */,
+				5317A51A17258168002C6603 /* AFNetworkActivityIndicatorManager.m */,
+				5317A51B17258168002C6603 /* AFNetworking.h */,
+				5317A51C17258168002C6603 /* AFPropertyListRequestOperation.h */,
+				5317A51D17258168002C6603 /* AFPropertyListRequestOperation.m */,
+				5317A51E17258168002C6603 /* AFURLConnectionOperation.h */,
+				5317A51F17258168002C6603 /* AFURLConnectionOperation.m */,
+				5317A52017258168002C6603 /* AFXMLRequestOperation.h */,
+				5317A52117258168002C6603 /* AFXMLRequestOperation.m */,
+				5317A52217258168002C6603 /* UIImageView+AFNetworking.h */,
+				5317A52317258168002C6603 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			path = "../../Downloads/AFNetworking-AFNetworking-215a32e/AFNetworking";
+			sourceTree = "<group>";
+		};
 		535A294A17217F7300E45558 = {
 			isa = PBXGroup;
 			children = (
+				5317A51017258168002C6603 /* AFNetworking */,
 				535A295C17217F7400E45558 /* Recipe_iOS */,
 				535A298317217F7400E45558 /* Recipe_iOSTests */,
 				535A295517217F7400E45558 /* Frameworks */,
@@ -121,10 +184,15 @@
 			children = (
 				535A296517217F7400E45558 /* AppDelegate.h */,
 				535A296617217F7400E45558 /* AppDelegate.m */,
-				535A296E17217F7400E45558 /* MainStoryboard_iPhone.storyboard */,
+				535A29971721839500E45558 /* ShowRecipesViewController.h */,
+				535A29981721839500E45558 /* ShowRecipesViewController.m */,
+				53A54C851721F0D700BEC99A /* ShowRecipeDetailViewController.h */,
+				53A54C861721F0D700BEC99A /* ShowRecipeDetailViewController.m */,
 				535A297117217F7400E45558 /* MainStoryboard_iPad.storyboard */,
 				535A297417217F7400E45558 /* ViewController.h */,
 				535A297517217F7400E45558 /* ViewController.m */,
+				535A29941721815300E45558 /* AddRecipeViewController.h */,
+				535A29951721815300E45558 /* AddRecipeViewController.m */,
 				535A295D17217F7400E45558 /* Supporting Files */,
 			);
 			path = Recipe_iOS;
@@ -217,6 +285,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 535A294A17217F7300E45558;
 			productRefGroup = 535A295417217F7400E45558 /* Products */;
@@ -238,7 +307,6 @@
 				535A296917217F7400E45558 /* Default.png in Resources */,
 				535A296B17217F7400E45558 /* Default@2x.png in Resources */,
 				535A296D17217F7400E45558 /* Default-568h@2x.png in Resources */,
-				535A297017217F7400E45558 /* MainStoryboard_iPhone.storyboard in Resources */,
 				535A297317217F7400E45558 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +345,18 @@
 				535A296317217F7400E45558 /* main.m in Sources */,
 				535A296717217F7400E45558 /* AppDelegate.m in Sources */,
 				535A297617217F7400E45558 /* ViewController.m in Sources */,
+				535A29961721815300E45558 /* AddRecipeViewController.m in Sources */,
+				535A29991721839500E45558 /* ShowRecipesViewController.m in Sources */,
+				53A54C871721F0D700BEC99A /* ShowRecipeDetailViewController.m in Sources */,
+				5317A52417258168002C6603 /* AFHTTPClient.m in Sources */,
+				5317A52517258168002C6603 /* AFHTTPRequestOperation.m in Sources */,
+				5317A52617258168002C6603 /* AFImageRequestOperation.m in Sources */,
+				5317A52717258168002C6603 /* AFJSONRequestOperation.m in Sources */,
+				5317A52817258168002C6603 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				5317A52917258168002C6603 /* AFPropertyListRequestOperation.m in Sources */,
+				5317A52A17258168002C6603 /* AFURLConnectionOperation.m in Sources */,
+				5317A52B17258168002C6603 /* AFXMLRequestOperation.m in Sources */,
+				5317A52C17258168002C6603 /* UIImageView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +385,6 @@
 				535A296017217F7400E45558 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		535A296E17217F7400E45558 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				535A296F17217F7400E45558 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		535A297117217F7400E45558 /* MainStoryboard_iPad.storyboard */ = {
@@ -467,6 +539,7 @@
 				535A299017217F7400E45558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		535A299117217F7400E45558 /* Build configuration list for PBXNativeTarget "Recipe_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +548,7 @@
 				535A299317217F7400E45558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

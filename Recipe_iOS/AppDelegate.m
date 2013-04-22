@@ -7,12 +7,30 @@
 //
 
 #import "AppDelegate.h"
+#import "AddRecipeViewController.h"
+#import "ShowRecipesViewController.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    ViewController *mainController = [[ViewController alloc] init];
+    ShowRecipesViewController *showRecipesViewController = [[ShowRecipesViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    
+    //UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    //[tabBarController setViewControllers:@[addRecipeViewController, showRecipesViewController]];
+    //self.window.rootViewController = tabBarController;
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: mainController];
+    self.window.rootViewController = navController;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							

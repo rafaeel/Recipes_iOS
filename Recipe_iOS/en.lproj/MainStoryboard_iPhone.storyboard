@@ -14,6 +14,10 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BOi-qd-3gK">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="ute-ps-eJr"/>
+                                    <outlet property="delegate" destination="2" id="V2X-VD-37q"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -25,7 +29,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="TableView" destination="BOi-qd-3gK" id="WFQ-iL-CHk"/>
+                        <outlet property="tableView" destination="BOi-qd-3gK" id="rIP-7P-8HC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -38,9 +42,6 @@
         </class>
         <class className="ShowRecipesViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ShowRecipesViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="TableView" candidateClass="UITableView"/>
-            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

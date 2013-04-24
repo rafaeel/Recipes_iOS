@@ -78,20 +78,20 @@
 }
 
 - (void) postRecipe:(UIButton *) sender {
+    NSLog(@"Posting Recipe");
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:nameRecipe.text, @"name", ingredientsRecipe.text, @"ingredients", nil];
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:parameters options:kNilOptions error:&error];
     
-    //NSURL * url =[[NSURL alloc] initWithString: @"http://192.168.1.101:3000/prescriptions.json"]; //casa
-    NSURL *url =[[NSURL alloc] initWithString: @"http://192.168.0.25:3000/prescriptions.json"]; //RubyThree
+    // NSURL * url =[[NSURL alloc] initWithString: @"http://192.168.1.101:3000/prescriptions.json"]; //casa
+    // NSURL *url =[[NSURL alloc] initWithString: @"http://192.168.0.25:3000/prescriptions.json"]; //RubyThree
+    NSURL *url =[[NSURL alloc] initWithString: @"http://127.0.0.1:3000/prescriptions.json"]; //RubyThree    
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:url];
     
     NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST" path:@"/prescriptions" parameters:parameters];
-    //[request setHTTPBody:request];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request setValue:[NSString stringWithFormat:@"%d", [jsonData length]] forHTTPHeaderField:@"Content-Length"];
-    //[request setHTTPMethod:@"POST"];
     [request setHTTPBody:jsonData];
     
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
@@ -102,7 +102,6 @@
         //[successAlert release];
         
     }failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-        
         NSLog(@"[Error]: (%@ %@) %@", [request HTTPMethod], [[request URL] relativePath], error);
     }];
     

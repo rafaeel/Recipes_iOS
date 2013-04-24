@@ -10,10 +10,11 @@
 
 @interface ShowRecipesViewController : UITableViewController
 
-
-@property (weak, nonatomic) IBOutlet UITableView *TableView;
 @property (strong, nonatomic) NSArray *nameOfArray;
 @property (strong, nonatomic) NSDictionary *Transf;
 @property (strong, nonatomic) NSArray *recipes;
+@property NSMutableData *webData;
+@property NSURLConnection *con;
+@property NSMutableArray *array;
 
 @end

@@ -10,20 +10,16 @@
 #import "ShowRecipeDetailViewController.h"
 
 @interface ShowRecipesViewController ()<UITableViewDataSource, UITableViewDelegate, NSURLConnectionDataDelegate>
-{
-    NSMutableData *webData;
-    NSURLConnection *con;
-    NSMutableArray *array;
-}
 
 @end
 
 @implementation ShowRecipesViewController
-
-@synthesize TableView;
 @synthesize nameOfArray;
 @synthesize Transf;
 @synthesize recipes;
+@synthesize webData;
+@synthesize con;
+@synthesize array;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -40,19 +36,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    [[self TableView]setDelegate:self];
-    [[self TableView]setDataSource:self];
-    array = [[NSMutableArray alloc] init];
+    recipes = @[];
     
     //NSURL * url =[[NSURL alloc] initWithString: @"http://192.168.1.101:3000/prescriptions.json"]; //casa
-    NSURL * url =[[NSURL alloc] initWithString: @"http://192.168.0.25:3000/prescriptions.json"]; //RubyThree
+    //NSURL * url =[[NSURL alloc] initWithString: @"http://192.168.0.25:3000/prescriptions.json"]; //RubyThree
+    NSURL * url =[[NSURL alloc] initWithString: @"http://127.0.0.1:3000/prescriptions.json"]; //RubyThree
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     
     con = [NSURLConnection connectionWithRequest:request delegate:self];
@@ -83,91 +71,36 @@
 }
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    NSDictionary *allDataDictioray = [NSJSONSerialization JSONObjectWithData:webData options:0 error:nil];
-    
-    for (NSDictionary *diction in allDataDictioray) {
-        nameOfArray = [diction objectForKey:@"prescription"];
-        NSLog(@"%@", allDataDictioray);
-        NSString *label = [nameOfArray valueForKey:@"name"];
-        
-        [array addObject:label];
-    }
-    [[self TableView]reloadData];
+    recipes = [NSJSONSerialization JSONObjectWithData:webData options:0 error:nil];
+    NSLog(@"Finished loading: %d elements", [recipes count]);
+    [self.tableView reloadData];
 }
-
-
-#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return [array count];
+    NSLog(@"Got to number of rows: %d", [recipes count]);
+    return [recipes count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (!cell)
     {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = [array objectAtIndex:indexPath.row];
-    
-    // Configure the cell...
+    NSDictionary *recipe = [[recipes objectAtIndex:indexPath.row] objectForKey:@"prescription"];
+    cell.textLabel.text = [recipe objectForKey:@"name"];
     
     return cell;
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-#pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

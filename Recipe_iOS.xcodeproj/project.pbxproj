@@ -34,6 +34,7 @@
 		535A298B17217F7400E45558 /* Recipe_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A298A17217F7400E45558 /* Recipe_iOSTests.m */; };
 		535A29961721815300E45558 /* AddRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A29951721815300E45558 /* AddRecipeViewController.m */; };
 		535A29991721839500E45558 /* ShowRecipesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A29981721839500E45558 /* ShowRecipesViewController.m */; };
+		53A43BFF1728127C00D29E9A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A43BFD1728127C00D29E9A /* MainStoryboard_iPhone.storyboard */; };
 		53A54C871721F0D700BEC99A /* ShowRecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A54C861721F0D700BEC99A /* ShowRecipeDetailViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		535A29951721815300E45558 /* AddRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRecipeViewController.m; sourceTree = "<group>"; };
 		535A29971721839500E45558 /* ShowRecipesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowRecipesViewController.h; sourceTree = "<group>"; };
 		535A29981721839500E45558 /* ShowRecipesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowRecipesViewController.m; sourceTree = "<group>"; };
+		53A43BFE1728127C00D29E9A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		53A54C851721F0D700BEC99A /* ShowRecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowRecipeDetailViewController.h; sourceTree = "<group>"; };
 		53A54C861721F0D700BEC99A /* ShowRecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowRecipeDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 		535A295C17217F7400E45558 /* Recipe_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				53A43BFD1728127C00D29E9A /* MainStoryboard_iPhone.storyboard */,
 				535A296517217F7400E45558 /* AppDelegate.h */,
 				535A296617217F7400E45558 /* AppDelegate.m */,
 				535A29971721839500E45558 /* ShowRecipesViewController.h */,
@@ -308,6 +311,7 @@
 				535A296B17217F7400E45558 /* Default@2x.png in Resources */,
 				535A296D17217F7400E45558 /* Default-568h@2x.png in Resources */,
 				535A297317217F7400E45558 /* MainStoryboard_iPad.storyboard in Resources */,
+				53A43BFF1728127C00D29E9A /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +405,14 @@
 				535A298717217F7400E45558 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53A43BFD1728127C00D29E9A /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A43BFE1728127C00D29E9A /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
